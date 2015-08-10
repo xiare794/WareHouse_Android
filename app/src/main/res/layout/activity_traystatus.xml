@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="托盘"
+            android:id="@+id/trayPage_trayID"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"/>
+        <View
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:text="123托盘"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:paddingLeft="15px"
+            android:id="@+id/trayPage_trayMainCard"
+            android:text="主卡片信息-FURSLFJJSOOA4E"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lightgray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:paddingLeft="15px"
+            android:id="@+id/trayPage_trayViceCard"
+            android:text="副卡片信息-FURSLFJJSOOA4E"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lightgray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:paddingLeft="15px"
+
+            android:id="@+id/trayPage_trayInfo"
+            android:text="货物信息:暂为空"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lightgray"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/slategray">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定副卡"
+            android:id="@+id/trayPage_bindBtn"
+
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            style="@style/btnStyleSandrift"
+            android:enabled="false" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="离开"
+            android:textSize="30dp"
+            android:id="@+id/trayPage_btn"
+            android:layout_weight="1"
+            style="@style/btnStyleSandrift"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

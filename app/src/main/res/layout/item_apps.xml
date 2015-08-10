@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/appItemBox"
+        android:paddingRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作类型"
+            android:id="@+id/appItem_appType"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进仓编号XXXXXXX"
+            android:id="@+id/appItem_InStockID"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/appItem_appType"
+            android:layout_marginLeft="27dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际数量/预入数量"
+            android:id="@+id/appItem_count"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货品名称"
+            android:id="@+id/appItem_appName"
+            android:layout_alignTop="@id/appItem_appType"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送货公司、送货人员信息"
+            android:id="@+id/appItem_deliver"
+            android:layout_below="@+id/appItem_InStockID"
+            android:layout_alignLeft="@+id/appItem_InStockID"
+            android:layout_alignStart="@+id/appItem_InStockID" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成状态"
+            android:id="@+id/appItem_appStatus"
+            android:layout_below="@+id/appItem_count"
+            android:layout_alignRight="@+id/appItem_count"
+            android:layout_alignEnd="@+id/appItem_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预入时间 2015-05-06 13"
+            android:id="@+id/appItem_bookingTime"
+            android:layout_below="@+id/appItem_appName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相关工作人员 理货:李 叉车:罗"
+            android:id="@+id/appItem_operators"
+            android:layout_below="@+id/appItem_appStatus"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:id="@+id/appCompletePercent"
+        android:layout_alignParentRight="true"
+        android:textSize="22dp"
+    />
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="装箱清单/编码"
+        android:id="@+id/apo_Title"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/slategray"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false" />
+
+
+        <!-- Right side spacer -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider1"
+        android:layout_below="@id/apo_Title"
+        android:background="@color/darkgray"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group"
+        android:layout_below="@id/divider1"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="货代名:"
+                android:layout_weight="4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="暂缺"
+                android:id="@+id/apo_agentName"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="箱型"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="暂缺"
+                android:id="@+id/apo_cType"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider2"
+        android:layout_below="@+id/ap_appInfo_group"
+        android:background="@color/lightgray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group2"
+        android:layout_below="@id/divider2"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="箱号:"
+                android:textSize="20dp"
+                android:layout_weight="2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GP"
+                android:id="@+id/apo_wCSeries"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="封号:"
+                android:id="@+id/ap_PreCount_label"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="暂缺"
+                android:id="@+id/apo_wCSeal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider3"
+        android:layout_below="@id/ap_appInfo_group2"
+        android:background="@color/lightgray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group3"
+        android:layout_below="@id/divider3"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="状态:无"
+                android:id="@+id/apo_Status"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="叉车:无"
+                android:id="@+id/apo_OpFork"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="理货:无"
+                android:id="@+id/apo_Counter"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ap_appInfo_group3"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider4"
+            android:background="@color/darkgray"
+            />-->
+            <!--android:layout_below="@id/ap_appInfo_group3"-->
+
+        <!--
+                <ListView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="10dp"
+                    android:id="@+id/apo_TraysList"
+                    android:layout_gravity="center_horizontal"
+                    />
+                android:layout_below="@id/divider4"-->
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apo_fee"
+        android:text="费用：X"
+        android:layout_marginLeft="10dp"/>
+        <!--android:layout_below="@id/apo_TraysList"-->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apo_trayList"
+        android:text="等待刷新托盘信息"
+        android:layout_marginTop="10dp"/>
+        <!-- android:layout_below="@id/apo_fee"-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/traysView"
+        />
+        <!-- android:layout_below="@+id/apo_trayList"-->
+        </LinearLayout>
+
+
+</ScrollView>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btmNav"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@color/slategray">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="留空"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        style="@style/btnStyleSandrift"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="司机"
+        android:textSize="30dp"
+        android:id="@+id/apo_truckBtn"
+        android:layout_weight="1"
+        style="@style/btnStyleSandrift"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="留空"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        style="@style/btnStyleSandrift"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:id="@+id/apo_completeBtn"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        style="@style/btnStyleSandrift"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

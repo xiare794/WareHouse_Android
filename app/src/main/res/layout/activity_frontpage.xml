@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维尔豪斯仓库_手持机"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态(时间，目前等待任务数量)"
+        android:id="@+id/main_status_text"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bright_foreground_material_dark"
+        android:paddingLeft="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppsLV"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

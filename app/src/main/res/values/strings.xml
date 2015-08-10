@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WareLink_Mobile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <!--极路由<string name="dbAddress">192.168.199.120</string>-->
+    <!--刘昕家<string name="dbAddress">192.168.1.150</string>-->
+    <!--仓库--><string name="dbAddress">192.168.3.150</string>
+
+    <string name="ConnectionLostInterval">10000</string>
+    <string name="RefreshInterval">2000</string>
+</resources>

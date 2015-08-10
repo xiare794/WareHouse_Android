@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.administrator.warelink_mobile" >
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:label="login">
+        </activity>
+        <activity android:name=".FrontPageActivity" android:label="frontpage"></activity>
+        <activity android:name=".AppsPageActivity" android:label="appPage"></activity>
+        <activity android:name=".PageRespActivity" android:label="PageResp"></activity>
+        <activity android:name=".TrayStatus_Activity" android:label="TrayStatus"></activity>
+        <activity android:name=".MonitorActivity" android:label="PageMonitor" android:screenOrientation="landscape"></activity>
+        <activity android:name=".TruckHomeActivity" android:label="PageTruck"></activity>
+        <activity android:name=".AppsOutActivity" android:label="PageAppOut"></activity>
+    </application>
+
+</manifest>

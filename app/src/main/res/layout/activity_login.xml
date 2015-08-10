@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="维尔豪斯仓库登陆"
+        android:id="@+id/loginTitle"
+        android:textColor="#EEE"
+        android:background="#666"
+        android:padding="10dp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="40dp"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginUser"
+            android:hint="用户"
+
+
+             />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginPassword"
+            android:layout_below="@id/loginUser"
+            android:paddingTop="30dp"
+            android:hint="密码"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:id="@+id/loginCheckBoxRememPS"
+            android:layout_below="@id/loginPassword"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:id="@+id/loginHint"
+            android:layout_below="@+id/loginPassword"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆仓库"
+            android:id="@+id/loginSubmit"
+            android:layout_below="@id/loginHint"
+            style="@style/btnStyleSandrift"
+            >
+            <requestFocus />
+         </Button>
+
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginProgressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

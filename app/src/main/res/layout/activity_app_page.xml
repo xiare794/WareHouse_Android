@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/slategray"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false" />
+
+
+        <!-- Right side spacer -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider1"
+        android:layout_below="@+id/textView2"
+        android:background="@color/darkgray"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group"
+        android:layout_below="@id/divider1"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:id="@+id/ap_appName_label"
+                android:layout_weight="4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="暂缺"
+                android:id="@+id/ap_appName"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="唛头"
+                android:id="@+id/ap_Maitou_label"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="唛头值"
+                android:id="@+id/ap_Maitou"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider2"
+        android:layout_below="@+id/ap_appInfo_group"
+        android:background="@color/lightgray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group2"
+        android:layout_below="@id/divider2"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新时间"
+                android:id="@+id/ap_BookingTime_label"
+                android:textSize="10dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2014-12-09 00:00:00"
+                android:id="@+id/ap_BookingTime"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="数量"
+                android:id="@+id/ap_PreCount_label"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="暂缺"
+                android:id="@+id/ap_PreCount"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider3"
+        android:layout_below="@id/ap_appInfo_group2"
+        android:background="@color/lightgray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ap_appInfo_group3"
+        android:layout_below="@id/divider3"
+        >
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                android:id="@+id/ap_Status_label"
+                android:layout_weight="4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="无异常"
+                android:id="@+id/ap_Status"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="叉车\n未指定"
+                android:id="@+id/ap_OpFork"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="理货\n未指定"
+                android:id="@+id/ap_Counter"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider4"
+        android:layout_below="@id/ap_appInfo_group3"
+        android:background="@color/darkgray"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/ap_TraysList"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/divider4"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FFF"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/divider5"
+        android:layout_below="@id/ap_TraysList"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider5"
+        android:id="@+id/ap_PriceLabel"
+        android:text="费用：带计算"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmNav"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/slategray">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="唛头"
+            android:id="@+id/maitouBtn"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            style="@style/btnStyleSandrift"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="司机"
+            android:textSize="30dp"
+            android:id="@+id/truckBtn"
+            android:layout_weight="1"
+            style="@style/btnStyleSandrift"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textSize="30dp"
+            android:id="@+id/priceBtn"
+            android:layout_weight="1"
+            style="@style/btnStyleSandrift"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/completeBtn"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            style="@style/btnStyleSandrift"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_trays"
+    android:padding="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="托盘类型"
+        android:id="@+id/traysItem_appType"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="托数 15"
+        android:id="@+id/traysItem_traysCount"
+        android:layout_toRightOf="@id/traysItem_appType"
+        android:paddingLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唛头XXXXXX"
+        android:id="@+id/traysItem_Maitou"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尺寸 100x100x100"
+        android:id="@+id/traysItem_size"
+        android:layout_below="@id/traysItem_appType"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="箱数 30"
+        android:id="@+id/traysItem_itemCount"
+        android:layout_below="@id/traysItem_appType"
+        android:layout_toRightOf="@id/traysItem_size"
+        android:paddingLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置 A1/A2/A3"
+        android:id="@+id/traysItem_traysPos"
+        android:layout_below="@id/traysItem_appType"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>
